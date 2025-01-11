@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title >Portail Académique</title>
+        <link rel="stylesheet" href="k.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="shutcut icon" href="logo-ul.jpg">
+    </head>
+    <header>
+        <nav style="margin: 0.1rem; margin-bottom: 0;">
+            <button class="home" aria-label="Menu principal">
+                <span class="icone"><i class="fas fa-home" style="font-size: 1.5rem; color: deepskyblue;"></i>
+                    <span class="text">
+                    </span>
+                </span>                      
+            </button>
+            <div>
+                <span>
+                    <strong>
+                    <h1> <b style="color: deepskyblue;">P</b>ortail <b style="color: deepskyblue;">A</b>cadémique de l'<b style="color: deepskyblue;">U</b>niversité de <b style="color: deepskyblue;">L</b>omé
+                    </h1>
+                    </strong>
+                </span>
+            </div>
+            <div class="nav-right">
+                <button class="connect-btn">
+                    <span>Me connecter</span>
+                </button>
+    <div id="login-options" class="login-options">
+        <h3>Connexion</h3>
+            <input type="text" placeholder="Identifiant" class="login-input">
+            <input type="password" placeholder="Mot de passe" class="login-input">
+                <button class="login-submit">
+                    Se connecter 
+                </button>
+                    <div class="login-extras">
+                        <button class="login-reset">Identifiant oublié</button> <br>
+                        <button class="login-reset">Mot de passe oublié</button>
+                    </div>
+                </div            
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <img src="logo-ul.jpg" alt="Logo UL" class="sidebar-logo">
+                    <button class="close-sidebar">&times;
+                    </button>
+                </div>
+                    <div class="sidebar-menu">
+                        <a href="#" class="menu-item active" aria-label="Page d'accueil">
+                            <i class="fas fa-home" aria-hidden="true">    
+                            </i>
+                            Accueil
+                        </a>
+                        <a href="#" class="menu-item" aria-label="Offres de formation">
+                            <i class="fas fa-book" aria-hidden="true"> 
+                            </i>
+                            Offre
+                        </a>
+                        <a href="#" class="menu-item" aria-label="Projet Galilée">
+                            <i class="fas fa-project-diagram" aria-hidden="true">
+                            </i>
+                            Projet Galilée
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-overlay" id="sidebar-overlay"></div>
+            </div>
+        </nav>
+    </header>
+    <body>
+    <main>
+        <h2 class="welcome">Bienvenue
+        </h2>
+        
+        <div style="color: darkolivegreen;" class="announcement">
+            <p>Les inscriptions en ligne pour le compte de l'année académique <span class="highlight"> <b> 2024 - 2025 </b> </span> sont ouvertes pour la période</p>
+            <p>du <strong>16 septembre 2024</strong> au <strong>13 décembre 2024</strong>.</p>
+        </div>
+        <div class="options-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 1rem;">
+            <div class="option-card" style="flex: 0 1 calc(33.333% - 20px); display: flex; flex-direction: column; align-items: center;">
+                <h3 style="color: rgb(47, 103, 201);">Nouveau bachelier ?</h3>
+                <button class="action-btn primary" aria-label="Créer un compte pour nouveau bachelier" style="background-color: #007bff; color: #ffffff; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 120%; margin: 0 auto;">
+                    <div class="icon-text-container" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fas fa-user-plus" aria-hidden="true"></i>
+                        <span class="btn-text">Créer un compte</span>
+                    </div>
+                    <div class="description" style="text-align: center; margin-top: 5px;">
+                        Concerne uniquement tous les nouveaux bacheliers
+                    </div>
+                </button>
+            </div>
+            <div class="option-card" style="flex: 0 1 calc(33.333% - 20px); display: flex; flex-direction: column; align-items: center;">
+                <h3 style="color: rgb(228, 152, 98);">BAC étranger ou antérieur à 2011 ?</h3>
+                <button class="action-btn secondary" aria-label="Saisir les informations pour BAC étranger" style="background-color: #ffc107; color: #ffffff; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 120%; margin: 0 auto;">
+                    <div class="icon-text-container" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                        <span class="btn-text">Saisir les informations</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="option-card" style="flex: 0 1 calc(33.333% - 20px); display: flex; flex-direction: column; align-items: center;">
+                <h3 style="color: rgb(108, 236, 108);">Ancien étudiant ?</h3>
+                <button class="action-btn tertiary" aria-label="Créer un compte pour ancien étudiant" style="background-color: #28a745; color: #ffffff; border: none; padding: 10px 40px; font-size: 16px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 120%; margin: 0 auto;">
+                    <div class="icon-text-container" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        <span class="btn-text">Créer un compte</span>
+                    </div>
+                    <div class="description" style="text-align: center; margin-top: 5px;">
+                        <span>Concerne tous les anciens étudiants n'ayant pas de compte.</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <a href="#" class="download-link">Télécharger la procédure d'inscription</a>
+        </div>
+    </main>
+    <script src="l.js"></script>
+    </body>
+</html>
